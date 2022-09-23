@@ -27,11 +27,6 @@ python manage.py runserver
 
 Fire up a web browser to use the app at http://127.0.0.1:8000/
 
-Register, Login and Search.
-
-OR 
-
-Login using default username `foo` password `bar`
 
 ### Prerequisites
 
