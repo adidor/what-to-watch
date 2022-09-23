@@ -1,0 +1,16 @@
+{% extends 'base.html' %}   
+
+{% block content %}
+
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-center" style="padding:280px 16px">
+  <h1 class="w3-margin w3-jumbo">Do you have a VPN?</h1>
+  <a href="{% url 'third_page_yes' %}">
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">YES</button>
+  </a>
+  <a href="{% url 'third_page_no' %}">
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">NO</button>
+  </a>
+</header>
+{% endblock %} 

@@ -1,0 +1,158 @@
+{% extends 'base.html' %}   
+
+{% block content %}
+<!-- Header -->
+
+<header class="w3-container w3-center w3-theme" style="padding:168px 16px">
+    <h1 class="w3-margin w3-jumbo">WHAT GENRE DO YOU WANT TO WATCH?</h1>
+
+<div class="w3-bar">
+ <form method = 'POST' action = 'genre'>
+  <a href="{% url 'genre' %}">
+  {% csrf_token %}    
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="act">Action & Adventure</button>
+  </a>
+  </form>
+
+  <form method = 'POST' action = 'genre'>
+    <a href="{% url 'genre' %}">
+    {% csrf_token %}
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value = 'ani'>Animation</button>
+    </a>
+    </form>
+
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="cmy">Comedy</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="crm">Crime</button>
+        </a>
+        </form>
+    </div>
+
+    <div class="w3-bar">
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="doc">Documentary</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}  
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="drm">Drama</button>
+        </a>
+        </form>
+    
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="fnt">Fantasy</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="hst">History</button>
+        </a>
+        </form>
+    </div>
+
+    <div class="w3-bar">
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="hrr">Horror</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="fml">Kids & Family</button>
+        </a>
+        </form>
+    
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="msc">Music & Musical</button>
+        </a>
+        </form>
+    
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="trl">Mystery & Thriller</button>
+        </a>
+        </form>
+    </div>
+
+    <div class="w3-bar">
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="rma">Romance</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="scf">Science-Fiction</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="spt">Sport</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="war">War & Military</button>
+        </a>
+        </form>
+    </div>
+    <div class="w3-bar">
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="wsn">Western</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="rly">Reality TV</button>
+        </a>
+        </form>
+
+    <form method = 'POST' action = 'genre'>
+        <a href="{% url 'genre' %}">
+        {% csrf_token %}
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" style="width:95%" name = 'movie_genre' value="eur">Made in Europe</button>
+        </a>
+        </form>
+    </div>
+
+</header>
+
+
+{% endblock %} 
