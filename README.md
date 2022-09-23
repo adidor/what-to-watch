@@ -1,4 +1,4 @@
-# what-to-watch
+# What to Watch ?
 
 # Movie-Recommender-Django
 
